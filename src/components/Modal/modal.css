@@ -1,0 +1,81 @@
+.lmh-modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+.lmh-modal-wrapper.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.lmh-modal-wrapper .lmh-mark {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.lmh-modal-content {
+    top: 20px;
+    left: 50%;
+    /* width: 700px; */
+    position: absolute;
+    border-radius: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #fff;
+    transform: translate(-50%, 0) scale(1.2);
+    opacity: 0;
+    transition: all 0.3s ease;
+    border: 1px solid rgb(94, 92, 92);
+}
+
+.lmh-modal-open .lmh-modal-content {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+}
+
+.lmh-modal-body {
+    padding: 20px;
+}
+
+.lmh-modal-header {
+    padding: 10px 20px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+}
+
+.lmh-modal-footer {
+    text-align: right;
+    padding: 15px 20px 10px 20px;
+    border-top: 1px solid #ccc;
+}
+
+.lmh-modal-close {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px 20px;
+}
+
+.lmh-modal-open {
+    overflow: hidden;
+}
+
+.lmh-dialog {
+    position: relative;
+}
